@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#porcentaje-aprobados {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#malla {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.semestre {
+  min-width: 250px;
+}
+
+.semestre h2 {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #222222;
+  padding: 5px;
+  border-radius: 6px;
+  color: #f0f0f0;
+}
+
+.ramo {
+  background-color: #555555;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  color: #eee;
+  user-select: none;
+}
+
+.ramo:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.aprobado {
+  text-decoration: line-through;
+  background-color: #800000 !important;
+  color: white;
+}
+
+/* Colores por módulo */
+
+.basico { background-color: #4a90e2; color: white; }
+.edificacion { background-color: #f28b9d; color: white; }
+.instalaciones { background-color: #f5b775; color: black; }
+.vial { background-color: #f7dc6f; color: black; }
+.administracion { background-color: #7dc87d; color: white; }
+.evaluacion { background-color: #4d8051; color: white; }
+.estructuras { background-color: #ec9a9e; color: black; }
+.instalaciones-aplicadas { background-color: #70c9ca; color: black; }
+.obras-civiles { background-color: #d3b960; color: black; }
+.supervision { background-color: #8db0dc; color: white; }
+.construccion { background-color: #b4a6d8; color: white; }
+.transversal { background-color: #bba77f; color: black; }
+
+/* Leyenda */
+
+#leyenda-modulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modulo-leyenda {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.color-cuadro {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
