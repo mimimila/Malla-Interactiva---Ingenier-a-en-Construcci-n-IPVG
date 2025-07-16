@@ -2,16 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   background-color: #000000; /* Fondo negro */
-  color: #f0f0f0; /* Texto claro para contraste */
+  color: #f0f0f0; /* Texto claro */
 }
 
 h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: #ffffff; /* Título blanco */
+  color: #ffffff;
 }
-
-/* Mantener estilos de #malla y semestres igual */
 
 #malla {
   display: flex;
@@ -20,12 +18,21 @@ h1 {
   padding: 10px;
 }
 
-/* ... resto igual ... */
+.semestre {
+  min-width: 250px;
+}
 
-/* En los .ramo cambia color de texto para que se vea en fondo oscuro */
+.semestre h2 {
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #222222;
+  padding: 5px;
+  border-radius: 6px;
+  color: #f0f0f0;
+}
 
 .ramo {
-  background-color: #555555; /* Gris oscuro base para ramos */
+  background-color: #555555; /* gris oscuro para fondo de ramos */
   border-radius: 10px;
   padding: 10px;
   margin: 10px 0;
@@ -36,28 +43,14 @@ h1 {
   color: #eee; /* texto claro */
 }
 
-/* En hover resalta con sombra más clara */
-
 .ramo:hover {
   box-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
-/* Para las clases de colores por módulo, puedes aclarar los colores para que contrasten con negro */
-
-.basico { background-color: #4a90e2; color: white; } /* celeste pastel más intenso */
-.edificacion { background-color: #f28b9d; color: white; } /* rosa pastel */
-.instalaciones { background-color: #f5b775; color: black; } /* naranjo pastel */
-.vial { background-color: #f7dc6f; color: black; } /* amarillo pastel */
-.administracion { background-color: #7dc87d; color: white; } /* verde claro */
-.evaluacion { background-color: #4d8051; color: white; } /* verde oscuro */
-.estructuras { background-color: #ec9a9e; color: black; } /* coral pastel */
-.instalaciones-aplicadas { background-color: #70c9ca; color: black; } /* turquesa */
-.obras-civiles { background-color: #d3b960; color: black; } /* mostaza */
-.supervision { background-color: #8db0dc; color: white; } /* azul pastel */
-.construccion { background-color: #b4a6d8; color: white; } /* violeta pastel */
-.transversal { background-color: #bba77f; color: black; } /* marrón pastel */
-
-/* La clase aprobado puede mantenerse igual, pero con texto claro */
+.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+}
 
 .aprobado {
   text-decoration: line-through;
@@ -65,9 +58,17 @@ h1 {
   color: white;
 }
 
-/* Bloqueado puede tener opacidad para que se vea más apagado */
+/* Colores por módulo */
 
-.bloqueado {
-  opacity: 0.4;
-  pointer-events: none;
-}
+.basico { background-color: #4a90e2; color: white; }
+.edificacion { background-color: #f28b9d; color: white; }
+.instalaciones { background-color: #f5b775; color: black; }
+.vial { background-color: #f7dc6f; color: black; }
+.administracion { background-color: #7dc87d; color: white; }
+.evaluacion { background-color: #4d8051; color: white; }
+.estructuras { background-color: #ec9a9e; color: black; }
+.instalaciones-aplicadas { background-color: #70c9ca; color: black; }
+.obras-civiles { background-color: #d3b960; color: black; }
+.supervision { background-color: #8db0dc; color: white; }
+.construccion { background-color: #b4a6d8; color: white; }
+.transversal { background-color: #bba77f; color: black; }
